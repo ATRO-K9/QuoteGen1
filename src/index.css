@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+  @page {
+    size: A4;
+    margin: 20mm;
+  }
+  
+  body * {
+    visibility: hidden;
+  }
+  
+  #quotation-preview,
+  #quotation-preview * {
+    visibility: visible;
+  }
+  
+  #quotation-preview {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 210mm;
+    margin: 0;
+    padding: 0;
+    background: white;
+  }
+}
